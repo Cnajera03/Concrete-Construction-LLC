@@ -1,0 +1,32 @@
+/* styles.css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+}
+
+.btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #b91c1c;
+}
+
+header{
+  background:var(--black);
+  color:#fff;
+  padding:15px 40px;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
