@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Concrete Construction LLC</title>
 
-  <!-- Tailwind (optional, keep or remove later) -->
+  <!-- Tailwind-->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- External CSS file -->
@@ -50,10 +50,10 @@
     </div>
 
     <div class="grid grid-cols-2 gap-4">
-      <img src="images/img1.jpg" class="rounded-xl object-cover h-40 w-full" />
-      <img src="images/img2.jpg" class="rounded-xl object-cover h-40 w-full" />
-      <img src="images/img3.jpg" class="rounded-xl object-cover h-40 w-full" />
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="rounded-xl object-cover h-40 w-full" />
+      <img src="images/ccllc1.jpg" class="rounded-xl object-cover h-40 w-full" />
+      <img src="images/ccllc2.jpg" class="rounded-xl object-cover h-40 w-full" />
+      <img src="images/ccllc3.jpg" class="rounded-xl object-cover h-40 w-full" />
+      <img src="images/ccllc4.jpg" class="rounded-xl object-cover h-40 w-full" />
     </div>
   </section>
 
@@ -90,6 +90,56 @@
     </div>
   </section>
 
+<!-- PROJECTS -->
+<section id="projects" class="bg-white py-12">
+  <div class="max-w-7xl mx-auto px-8">
+
+    <h2 class="text-3xl font-bold text-center text-red-600 mb-10">
+      Our Projects
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Residential -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-center">
+          Residential
+        </h3>
+
+        <img id="residential-slider"
+             src="images/residential1.jpg"
+             class="project-img"
+             alt="Residential Work">
+      </div>
+
+      <!-- Commercial -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-center">
+          Commercial
+        </h3>
+
+        <img id="commercial-slider"
+             src="images/commercial1.jpg"
+             class="project-img"
+             alt="Commercial Work">
+      </div>
+
+      <!-- Custom -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-center">
+          Custom Work
+        </h3>
+
+        <img id="custom-slider"
+             src="images/custom1.jpg"
+             class="project-img"
+             alt="Custom Concrete Work">
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- CONTACT -->
   <section id="contact" class="max-w-3xl mx-auto p-8">
     <h2 class="text-2xl font-bold text-red-600 mb-4">Contact Us</h2>
@@ -102,24 +152,11 @@
       <button class="bg-red-600 text-white px-6 py-3 rounded">Submit</button>
     </form>
   </section>
+<script src="concrete.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <!-- Scroll JS -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        const headerOffset = document.querySelector('header').offsetHeight;
-        const elementPosition = target.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      });
-    });
-  </script>
-
+<script>
+  emailjs.init("DcFu_X6vKCHsrvHP8");
+</script>
 </body>
 </html>
