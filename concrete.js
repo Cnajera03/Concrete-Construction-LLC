@@ -99,3 +99,4 @@ startSlider("residential-slider", residentialImages, 2000);
 startSlider("commercial-slider", commercialImages, 2300);
 
 startSlider("custom-slider", customImages, 2600);
+
